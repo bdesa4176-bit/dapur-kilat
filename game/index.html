@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dapur Kilat — Warung Rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #1a120b; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; font-family: system-ui, sans-serif; }
+  canvas { width: min(96vw, 960px); height: auto; border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.5); background: #2b1d12; }
+  #status { color: #d7c9b8; font-size: 13px; margin-top: 10px; min-height: 18px; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="600"></canvas>
+<div id="status" role="status" aria-live="polite"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
